@@ -39,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isDeath)
         {
-            input.x = Input.GetAxis("Horizontal");
-            input.y = Input.GetAxis("Vertical");
+            input.x = Input.GetAxisRaw("Horizontal");
+            input.y = Input.GetAxisRaw("Vertical");
             input.Normalize();
             thisRigidbody.inertia = 0;
             thisRigidbody.velocity = activeVelocity * input;
