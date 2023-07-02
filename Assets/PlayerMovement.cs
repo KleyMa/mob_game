@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
             input.Normalize();
             thisRigidbody.inertia = 0;
             thisRigidbody.velocity = activeVelocity * input;
-            Debug.Log(thisRigidbody.velocity);
+            // Debug.Log(thisRigidbody.velocity);
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 thisRigidbody.velocity = (activeVelocity * input) / 2;
